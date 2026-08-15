@@ -63,6 +63,27 @@ audit records; an integration engine that executes proven workflows; and AI assi
 **requests** validated actions rather than performing them directly. Automation earns authority
 by passing tests, not by being convenient.
 
+### AI operations architecture
+
+The Summoner model takes a specific position on AI operations: **broad awareness, narrow
+permissions, human-held authority.** One component may know about many systems; nothing holds
+credentials it does not need for the current task; and irreversible decisions stay with people.
+
+Three parts of it are worth singling out:
+
+- **Awareness without access.** A requester can get an answer about another environment without
+  their context gaining access to it. Performing work inside an environment and disclosing that
+  environment are separate permissions.
+- **A continuity rule with equal weight to the capability rule.** The orchestrator must never
+  become required for the business to function — designed in before the dependency exists,
+  which is the only time it can be set honestly.
+- **Capability-specific autonomy.** Twelve mandatory requirements per capability, with automatic
+  demotion on threshold breach. "The system is trusted now" is not a reachable state.
+
+The write-up also records an **unresolved conflict** between this model and an existing stop
+condition, because a governance model that only publishes its resolved conflicts is not
+demonstrating much.
+
 ### Validation methodology
 
 A five-level maturity vocabulary — Planned, Documented, Implemented, Tested, Validated — where

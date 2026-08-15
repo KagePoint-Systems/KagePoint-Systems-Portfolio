@@ -154,6 +154,14 @@ state.
 Automation carries an **independent** authority gate: passing a defined acceptance-test suite
 plus explicit approval. Currently **zero tests passed**. A phase advancing does not raise it.
 
+The AI operations architecture for this phase — **Summoner** — has an owner-selected baseline
+recorded at [`docs/05_Automation/Summoner/`](docs/05_Automation/Summoner/README.md). It covers
+global orchestration, project and customer isolation, identity-based authority, support
+orchestration, continuity requirements, and a twelve-requirement autonomy promotion gate.
+
+**Nothing of it is built**, and one of its design conflicts with an existing stop condition
+remains open and unresolved.
+
 ---
 
 ## What comes next

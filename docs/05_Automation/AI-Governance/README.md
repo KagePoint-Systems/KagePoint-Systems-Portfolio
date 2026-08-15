@@ -25,6 +25,15 @@ The authority model, boundaries, and stop conditions governing AI assistance.
 
 Currently at the lowest authority level with zero promotion tests passed.
 
+## Summoner architecture
+
+The full AI operations architecture built on these principles is documented at
+[`../Summoner/`](../Summoner/README.md): global orchestration, trust hierarchy, project and
+customer isolation, scoped service identities, identity-based authority, support orchestration,
+continuity requirements, and the twelve-requirement autonomy promotion gate.
+
+**Nothing of it is implemented.**
+
 ## Maturity
 
 Planned -> Documented -> Implemented -> Tested -> Validated

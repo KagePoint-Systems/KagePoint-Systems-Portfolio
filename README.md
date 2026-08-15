@@ -184,7 +184,7 @@ modes, rollback, and recovery — so that failures happen there rather than in p
 
 [`docs/04_Security/Sentinel-Lab/`](docs/04_Security/Sentinel-Lab/)
 
-## Automation direction
+## Automation and AI operations direction
 
 **KagePoint Forge** is the deterministic orchestration and state layer: job state, queues,
 approvals, audit records, evidence, recovery state. **n8n** executes stable, repeatable
@@ -194,7 +194,19 @@ The deliberate design choice: automation and AI assistance **request** validated
 through Forge or n8n, which perform them using scoped service accounts. Nothing gets direct,
 unrestricted production access.
 
-[`docs/05_Automation/`](docs/05_Automation/)
+**Summoner** is the planned global AI engineer and orchestration broker — broad awareness,
+narrow permissions, human-held authority. It is paired with a hard continuity requirement:
+
+> Summoner must never be required for the business to function. Every client-impacting
+> capability requires a human-operable fallback, an authoritative system of record, documented
+> access, and a recovery path.
+
+Shorthand: **AI-first speed without AI-only dependency.**
+
+**Nothing of Summoner is built.** Authority level 0, zero promotion tests passed, no autonomy,
+no customers.
+
+[`docs/05_Automation/`](docs/05_Automation/) · [`docs/05_Automation/Summoner/`](docs/05_Automation/Summoner/README.md)
 
 ## Capability disclaimer
 
@@ -220,6 +232,7 @@ claimed here when internal evidence supports them.
 | [`docs/03_Infrastructure/`](docs/03_Infrastructure/) | Network, virtualization, storage, monitoring, remote access, backup |
 | [`docs/04_Security/`](docs/04_Security/) | Sentinel Lab, access control, segmentation, validation |
 | [`docs/05_Automation/`](docs/05_Automation/) | n8n, KagePoint Forge, AI governance, Graphify |
+| [`docs/05_Automation/Summoner/`](docs/05_Automation/Summoner/README.md) | Summoner AI operations architecture — orchestration, isolation, RBAC, continuity, autonomy gates |
 | [`docs/06_Portfolio-Case-Studies/`](docs/06_Portfolio-Case-Studies/) | Case studies with honest status labels |
 | [`diagrams/`](diagrams/) · [`examples/`](examples/) · [`templates/`](templates/) | Supporting material |
 
